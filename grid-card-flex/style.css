@@ -1,0 +1,40 @@
+.card {
+    border: 2px red solid;
+    width: 350px;
+    height: 250px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    width: 350px;
+    height: 250px;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    left: 40px;
+    bottom: 40px;
+}
+
+.button {
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.desc {
+    margin-bottom: 10;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}

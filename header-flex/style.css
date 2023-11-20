@@ -1,0 +1,207 @@
+/*  session final-3
+    Task: reset main styles on all elements
+    Hint: set box-sizing to border-box, margin and padding to zeros
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*  session final-3
+    Task:
+    - set the bg color of the body to white using hex
+    - style the header element to have color of hex 'f2f2f2', padding of 20 pixels, and center its text
+    - style the element with class 'h1' to have no margin, and a font size of 24 pixels
+*/
+
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/*  session final-3
+    Task:
+    - style the ul inside the nav to have no list style, no padding, a margin of 20 pixels vertically 
+    and no margin horizontally. Also set the display property to flex, allow wrapping, center the content and the text
+    - style the list items inside of the ul, inside of the nav, to have display as inline-block,
+     and a margin of 10 pixels on the right
+    - style the anchor tag inside the list items inside of the ul, inside of the nav,
+     to have no text decoration, a hex color '333', and vertical padding of 5 pixels, and horizontal padding of 10 pixels
+    - style all the elements that are the immediate child of the element with class 'portfolio__row',
+     to have width of 400 pixels
+*/
+
+.nav .ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.nav .ul .li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav .ul a {
+    text-decoration: none;
+    color: #333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.portfolio__row>* {
+    width: 400px;
+}
+
+/*  session final-3
+    Task:
+    - style elements with classes 'portfolio__row', 'stats__row', and 'blogs__row' to have display set to flex.
+    Also allow wrapping, center items vertically, and distribute the items with equal space around.
+    Also set a minimum gap of 10 pixels
+*/
+
+.portfolio__row,
+.stats__row,
+.blogs__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/*  session final-3
+    Task:
+    - style immediate child elements inside elements with classes 'portfolio__row', 'stats__row', and 'blogs__row' to have
+     width set to 450 pixels, and the text aligned in the center
+*/
+
+.portfolio__row > *, .stats__row > *, .blogs__row > * {
+    width: 450px;
+    text-align: center;
+}
+
+/*  session final-3
+    Task:
+    - style element with class 'main' to have display set to flex, flex direction set to column, 
+    with a gap of 10 pixels between items, and items centered horizontally
+*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+/*  session final-3
+    Task:
+    - style element with class 'section' to have 20 pixels of padding, a width of 100%, a bg color of 'f5f5f5', 
+    and a border radius of 5 pixels
+*/
+
+.section {
+    padding: 20px;
+    background-color: #f7f8fa;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*  session final-3
+    Task:
+    - style element with class 'h2' to have font size of 24 pixels, and a margin of 10 pixels only on the bottom
+*/
+
+.h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/*  session final-3
+    - Task:
+    - style p elements to have a font size of 16 pixels and a margin of 10 pixels only on the bottom
+*/
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*  session final-3
+    Task:
+    - style elements with classes 'work' and 'blog' to have display set to flex, flex-direction set to column. 
+    Also center the items horizontally, and add a margin of 20 pixels on the bottom
+*/
+
+.work, .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*  session final-3
+    Task:
+    - style img elements inside of elements with classes 'work' and 'blog', to have maximum width set to 100%, height set to auto,
+    border radius set to 5 pixels, and the bottom margin set to 10 pixels
+*/
+
+.work img, .blog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*  session final-3
+    Task:
+    - center the text inside the element with class 'work__description'
+    - style the elements with class 'h3' inside the element with class 'work__description' to have a font size of 18 pixels,
+     and a margin of 5 pixels on the bottom
+    - style the p inside the element with class 'work__description' to have a font size of 14 pixels, and no margin on the bottom
+*/
+
+.work__description {
+    text-align: center;
+}
+
+.work__description .h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.work__description p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*  session final-3
+    Task:
+    - style the elements with class 'social-media' to have a font size of 20 pixels
+*/
+
+.social-media {
+    font-size: 20px;
+}

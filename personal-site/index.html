@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Page</title>
+
+    <style>
+        body{
+            background-color: white;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Links Section -->
+
+    <header>
+        <div>
+            <nav>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#reviews">Reviews</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+    
+            <style>
+                .nav-link{
+                    font-size: 24px;
+                    color: white;
+                    padding-right: 25px;
+                }
+
+                .nav-link:hover{
+                    color: blue;
+                }
+
+                nav{
+                    text-align: right;
+                    background-color: black;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            </style>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+
+    <section id="portfolio" class="portfolio">
+
+        <style>
+            .portfolio{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-color: white;
+                justify-content: center;
+            }
+            .project{
+                size: 400px;
+                margin: 10px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 3%;
+                padding: 10px;
+            }
+
+            .project-img{
+                width: 400px;
+                height: 400px;
+            }
+
+            .project-text{
+                display: block;
+                width: 100%;
+                font-size: 40px;
+                font-weight: bold;
+                color: black;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+
+            .project-desc{
+                font-size: 25px;
+                padding: 10px;
+                color: black;
+            }
+        </style>
+
+        <div class="project-text">
+            My Projects:
+        </div>
+
+        <div class="project" id="project-1">
+            <img class="project-img" src="Images\cooking.jpg" alt="Cooking Website">
+            <div class="project-desc">
+                <b>Cooking Guide</b>
+            </div>
+        </div>
+
+        <div class="project" id="project-2">
+            <img class="project-img" src="Images\nft.png" alt="Cooking Website">
+            <div class="project-desc">
+                <b>NFT Market</b>
+            </div>
+        </div>
+
+        <div class="project" id="project-3">
+            <img class="project-img" src="Images\sport.jpeg" alt="Cooking Website">
+            <div class="project-desc">
+                <b>Sports Insights</b>
+            </div>
+        </div>
+
+        <div class="project" id="project-4">
+            <img class="project-img" src="Images\store.jpg" alt="Cooking Website">
+            <div class="project-desc">
+                <b>Local Market</b>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Reviews Section-->
+
+    <section id="reviews" class="reviews">
+        
+        <style>
+            .reviews{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-color: black;
+            }
+
+            .reviews-text{
+                display: block;
+                width: 100%;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+
+            .review{
+                color: white;
+                font-size: 20px;
+                size: 200px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .review-desc{
+                color: white;
+                font-size: 15px;
+            }
+        </style>
+
+        <div class="reviews-text">
+            Reviews
+        </div>
+
+        <div class="review">
+            <p> Darren Anthony: ⭐⭐⭐⭐⭐ </p>
+            <p class="review-desc">
+                Your website offers a user-friendly experience and provides the information I need. The layout and design are modern and appealing. The website also has a smooth scrolling feature, making it easy for me to navigate.
+            </p>
+        </div>
+
+        
+        <div class="review">
+            <p> Amy Adams: ⭐⭐⭐⭐⭐ </p>
+            <p class="review-desc">
+                Overall, I find your website to be a reliable and trustworthy source of information. The user interface is intuitive and easy to navigate. The content is well-organized and covers all the necessary topics. Additionally, the website's search functionality allows me to quickly find the information I'm looking for.
+            </p>
+        </div>
+
+        <div class="review">
+            <p> Brie Larson: ⭐⭐⭐⭐⭐ </p>
+            <p class="review-desc">
+                Your website has a great deal of useful content, which has made my online research more efficient. The user interface is easy to navigate, and the site is mobile-responsive, making it accessible from any device. I particularly appreciate the comprehensive glossary section, which provides a convenient and easy-to-understand overview of the various terms and concepts discussed on the site.
+            </p>
+        </div>
+
+        <div class="review">
+            <p> Dakota Johnson: ⭐⭐⭐⭐⭐ </p>
+            <p class="review-desc">
+                Your website has an informative and engaging blog that offers a diverse range of topics. The content is well-researched and provides valuable insights for readers. I also appreciate the resources section, which offers a convenient collection of articles, reports, and infographics that further enhance the user experience.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
+        <style>
+            .about-text{
+                display: block;
+                width: 100%;
+                font-size: 40px;
+                font-weight: bold;
+                color: black;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+        </style>
+
+        <div class="about-text">
+            About Me:
+        </div>
+
+        <div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">Contact</section>
+
+    <!-- Footer Section -->
+    
+    <footer>Footer</footer>
+</body>
+
+</html>

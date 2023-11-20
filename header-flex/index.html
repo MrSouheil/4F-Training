@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header</title>
+    <style>
+        /* session final-2 
+        Task: reset styles 
+        Hint: set box-sizing to border-box, margin and padding to zero */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* session final-2
+        Task: style the header element 
+        Hint: set bg color to hex '333', give the header a padding of 20 pixels, and set its display property to flex 
+        Hint: space the elements based on distance between them, and make sure all elements are vertically centered on an axis  */
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* session final-2
+        Task: style the element with class 'logo' with white hex color, font size of 24 pixels, and a bold font  */
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* session final-2 
+        Task: style the unordered list inside nav element
+        Hint: set its display property to flex, and remove any list styles  */
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        /* session final-2 
+        Task: style the list items inside nav element 
+        Hint: set the margin to 20 pixels  */
+
+        nav li {
+            margin: 20px;
+        }
+
+        /* session final-2 
+        Task: style the anchor tag inside nav element 
+        Hint: set the color to white, and the font size to 16 pixels  */
+
+        nav a {
+            color: white;
+            font-size: 16px;
+        }
+
+        /* session final-2 
+        Task: style the anchor tag inside the last list item 
+        Hint: set the color to yellow, and use CSS to make all its letters display in uppercase  */
+
+        nav li:last-child a {
+            color: yellow;
+            text-transform: uppercase;
+        }
+
+        /* session final-2 
+        Task: style the header for screens with width under 600 pixels 
+        Hint: change the flex direction of the header element to column 
+        Hint: change the flex direction of unordered list inside of the nav element to column 
+        Hint: change the margins on the list item inside of the nav element, to have a margin of zero pixels on the left, 
+        and a margin of 10 pixels on the bottom  */
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin-bottom: 10px;
+                margin-left: 0px;
+            }
+
+        }
+
+        /* session final-2 
+        Task: style the element with class 'flicker-effect' to have animation named 'flicker' over 1 second 
+        and with infinite iterations  */
+
+        .flicker-effect {
+            animation: flicker 1s infinite;
+        }
+
+        /* session final-2 
+        Task: create an animation named 'flicker' that switches the opacity from 0 to 1  */
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- session final-2 -->
+    <!-- Task: add the HTML structure of the page -->
+    <!-- Hint: structure: <header> <div class="logo">Logo</div> <nav> <ul> <li><a>Home</a></li> <li><a>About</a></li> <li><a>Services</a></li> <li class="flicker-effect"><a>Contact</a></li> </ul> </nav> </header> -->
+
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a>Services</a>
+                </li>
+                <li class="flicker-effect">
+                    <a>Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
